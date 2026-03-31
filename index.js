@@ -100,7 +100,7 @@ const conversationRouter = require('./routes/conversationRoutes');
 app.use('/api/v1/conversations', conversationRouter);
 
 // Messages REST API (optional, realtime via socket)
-const messageRouter = require('./routes/messageRoutes'); // لو عندك ملف Messages موجود
+const messageRouter = require('./routes/messageRoutes'); 
 app.use('/api/v1/messages', messageRouter);
 
 app.get('/', (req, res) => res.send('WhatsApp Backend running!'));
